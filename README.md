@@ -1,4 +1,4 @@
-# ESSION 01: THE SCAVENGER HUNT
+# SESSION 01: THE SCAVENGER HUNT
 
 <!--Objective: Map the Filesystem Hierarchy Standard (FHS), navigate restricted directories, and extract hidden system intel for your GitHub portfolio.-->
 
