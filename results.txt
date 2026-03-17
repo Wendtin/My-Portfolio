@@ -1,3 +1,0 @@
-drwx------ 2 wendkali wendkali 4096 Mar 11 20:51 /home/wendkali/Vault
--rw------- 1 wendkali wendkali 71 Mar 11 20:51 /home/wendkali/Vault/secrets.txt
--rw-r----- 1 root shadow 1452 Mar 10 00:06 /etc/shadow
