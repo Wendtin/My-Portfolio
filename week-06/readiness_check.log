@@ -1,0 +1,18 @@
+==================================================
+SESSION 16: READINESS INVENTORY
+==================================================
+Operator: Wend Tin Basile Sam
+Date: April 14, 2026
+
+Confidence Audit (Yes/No):
+1. Nmap (Network Scanning): No
+2. Docker (Containerization): No
+3. Linux Hardening (UFW/chmod): Yes
+4. VS Code Remote-SSH:Yes
+
+Identify your weakest area and your plan to review it:
+
+The main weakness was knowing where I am in the Linux filesystem and understanding the purpose of each command. For example, I tried to change the file mode (chmod 755 broken_script.sh), but it failed because I wasn't in the right directory (the forge_v1 folder). The nginx/port issue required multiple rounds because it wasn't obvious that the problem was outside Docker entirely, at the system level.
+To master Linux commands, I will practice these commands daily for at least 15 minutes before class begins, read and practice any permission strings immediately, and know exactly what to fix. At the end, I will simulate today's lab from scratch, independently, and check my understanding.
+
+==================================================
