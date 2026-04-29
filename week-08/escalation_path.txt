@@ -1,0 +1,14 @@
+==================================================
+SESSION 23: ESCALATION PATH REPORT (LINUX)
+==================================================
+MICRO-LAB (SUDO):
+1. Command used to escalate via 'find': 
+   [Paste command here]
+
+DEEP DIVE (CRON):
+1. Name of the root-owned script found:
+   [Type script name here]
+2. The specific command inside that script that was vulnerable:
+   [Type vulnerable line here]
+3. Final proof of root (output of 'id'):
+   [Paste output here]
