@@ -36,6 +36,8 @@ stack provides centralized log aggregation critical for Phase 2 forensic
 analysis. Port 4444 on the quarantined host is non-standard and consistent
 with a pre-staged reverse shell listener or persistence mechanism, making it
 a key forensic artifact warranting further investigation.
+
+
 ---
 
 ## Phase 1: Rapid Triage
@@ -163,6 +165,7 @@ in a real enterprise environment?]
 iptables -A INPUT -s 10.0.0.55 -j DROP
 
 **SOC Analysis:**
+
 A single iptables INPUT DROP rule targeting one attacker IP represents
 an insufficient defensive posture because it addresses only the known
 source address of a confirmed threat actor while leaving the system
@@ -176,6 +179,8 @@ to jump hosts only. Log forwarding to a centralized SIEM with threshold
 alerting on repeated authentication failures would have surfaced this
 attack in near-real-time, enabling a faster and more comprehensive
 response than a single firewall rule permits (Patel & Johnson, 2022).
+
+
 ---
 
 ## Phase 3: Full Spectrum
