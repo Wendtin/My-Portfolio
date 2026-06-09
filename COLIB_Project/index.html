@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title and favicon -->
+    <title>colib</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS files -->
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Main JavaScript file -->
+    <script src="script.js" defer></script>
+
+    <!-- Font Awesome icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Additional stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         Navigation Section
+    ========================== -->
+    <div class="content">
+        <section class="reveal">
+            <div>
+                <nav>
+
+                    <!-- Website logo and title -->
+                    <div class="logostyle">
+                        <img src="/home/wendkali/My-Portfolio/COLIB_Project/images/backgroundlogo.png" alt="logo" class="logo">
+                        <h2>Community <br>Free Library</h2>
+                    </div>
+
+                    <!-- Navigation menu links -->
+                    <div class="toggle-mode">
+                        <a href="#">Home</a>
+                        <a href="#">Membership</a>
+                        <a href="#">Events</a>
+                        <a href="#">About us</a>
+
+                        <!-- Join button -->
+                        <button class="dropdwn">Join us</button>
+
+                        <!-- Catalog dropdown menu -->
+                        <div class="dropdown">
+                            <button class="dropdwn">
+                                Catalog
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+
+                            <div class="dropdown-content">
+                                <a href="#">Fiction</a>
+                                <a href="#">Novel</a>
+                                <a href="#">Science & Technology</a>
+                                <a href="#">Action & Adventure</a>
+                                <a href="#">History</a>
+                                <a href="#">Religion & Spirituality</a>
+                                <a href="#">Humanities & Social Sciences</a>
+                            </div>
+                        </div>
+
+                        <!-- Dark mode toggle button -->
+                        <button id="toggle-mode">Toggle Dark Mode</button>
+
+                        <!-- Accessibility button to reduce animations -->
+                        <header>
+                            <button id="reduceMotionBtn">Reduce Motion</button>
+                        </header>
+
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </div>
+
+    <!-- =========================
+         Introduction Section
+    ========================== -->
+    <section class="reveal">
+
+        <!-- Main banner image -->
+        <img src="/home/wendkali/My-Portfolio/COLIB_Project/images/unsinkable.jpg" alt="headline picture">
+
+        <!-- Website description -->
+        <div class="description">
+            <p>
+                COLIB is a free online library designed to foster a love for reading and community interaction.
+                <br> It offers a diverse selection of books and newspapers, accessible to local readers.
+                The platform <br> organizes publications by genre and highlights paperback books,
+                recommending a featured book <br> each week through its cover page.
+                COLIB aims to promote literacy and build connections through <br>
+                shared reading experiences.
+            </p>
+        </div>
+
+        <!-- Top books list -->
+        <div class="list-book">
+            <h1>Top Books</h1>
+
+            <ol>
+                <li>1984 by George Orwell</li>
+                <li>To Kill a Mockingbird by Harper Lee</li>
+                <li>The Great Gatsby by F. Scott Fitzgerald</li>
+                <li>Pride and Prejudice by Jane Austen</li>
+                <li>Moby Dick by Herman Melville</li>
+                <li>The Catcher in the Rye by J.D. Salinger</li>
+                <li>Brave New World by Aldous Huxley</li>
+                <li>The Lord of the Rings by J.R.R. Tolkien</li>
+                <li>Harry Potter and the Sorcerer’s Stone by J.K. Rowling</li>
+                <li>Crime and Punishment by Fyodor Dostoevsky</li>
+            </ol>
+        </div>
+
+    </section>
+
+    <!-- =========================
+         Newly Published Books
+    ========================== -->
+    <section class="reveal">
+
+        <h2>Newly Published</h2>
+
+        <!-- Book cover gallery -->
+        <div class="book-gallery">
+            <img src="/home/wendkali/My-Portfolio/COLIB_Project/images/africarisen.jpg" alt="African Risen">
+            <img src="/home/wendkali/My-Portfolio/COLIB_Project/images/memory.jpg" alt="Memory Book">
+            <img src="/home/wendkali/My-Portfolio/COLIB_Project/images/TheGildedOnes.jpeg" alt="The Gilded Ones">
+            <img src="/home/wendkali/My-Portfolio/COLIB_Project/images/splinters.jpeg" alt="Splinters of Truth">
+        </div>
+
+    </section>
+
+    <!-- =========================
+         Testimonials Section
+    ========================== -->
+    <section class="reveal">
+
+        <h2>Testimonies</h2>
+
+        <!-- Embedded YouTube videos -->
+        <div class="videos">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/naIkpQ_cIt0"
+                title="YouTube video player"
+                allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/FUqiUFNRAxQ"
+                title="YouTube video player"
+                allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/ExJZAegsOis"
+                title="YouTube video player"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </section>
+
+    <!-- =========================
+         Petition Section
+    ========================== -->
+    <section class="reveal">
+
+        <div class="petition" id="petition">
+
+            <!-- Petition title -->
+            <h1>Sign Our Petition</h1>
+            <h2>Support Our Free Online Library</h2>
+
+            <!-- Petition description -->
+            <div class="petition-description">
+                <p>
+                    Support our petition to create a free, inclusive online library that
+                    provides access to books and newspapers for everyone in our community.
+                    This initiative aims to foster a culture of learning, sharing, and
+                    community engagement.
+                </p>
+            </div>
+
+            <!-- Existing signatures list -->
+            <div class="signatures" id="signatures-list">
+                <p>1. John Doe, New York</p>
+                <p>2. Jane Smith, Los Angeles</p>
+                <p>3. Alex Johnson, Chicago</p>
+                <p>4. Maria Rodriguez, Miami</p>
+            </div>
+
+            <!-- Signature counter -->
+            <div id="total-signatures">
+                Total Signatures: 4
+            </div>
+
+            <!-- Petition sign-up form -->
+            <form id="sign-petition">
+
+                <h3>Personal Information</h3>
+
+                <label for="name">Full Name*:</label>
+                <input type="text" id="name" name="name" required
+                    placeholder="Enter your full name">
+
+                <label for="email">Email Address*:</label>
+                <input type="email" id="email" name="email" required
+                    placeholder="Enter your email">
+
+                <label for="phone">Phone Number (Optional):</label>
+                <input type="tel" id="phone" name="phone"
+                    placeholder="Enter your phone number">
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"
+                    placeholder="Enter your city">
+
+                <label for="postal">Zip Code:</label>
+                <input type="text" id="postal" name="postal"
+                    placeholder="Enter your zip code">
+
+                <!-- Submit petition form -->
+                <button type="submit">Sign Now</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Petition functionality script -->
+    <script src="petition.js"></script>
+
+    <!-- =========================
+         Footer Section
+    ========================== -->
+    <footer>
+        <small> &copy; Copyright 2024, Wend Tin Basile Sam</small>
+    </footer>
+
+</body>
+</html>
