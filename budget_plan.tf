@@ -12,9 +12,10 @@ resource "aws_budgets_budget" "operator_guardrail" {
 
   # SABOTAGE 1: Syntax error (missing required 'notification_type')  
   notification {    
-    comparison_operator        = "GREATER_THAN"    
+    comparison_operator        = "GREATER_THAN" 
+    notification_type          = "ACTUAL"   
     threshold                  = 50    
     threshold_type             = "PERCENTAGE"    
-    subscriber_email_addresses = ["YOUR_EMAIL_HERE"]  
+    subscriber_email_addresses = ["sambilezony@gmail.com"]  
   }
 }
