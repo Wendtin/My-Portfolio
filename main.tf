@@ -24,7 +24,8 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "vault_encryption"
 
   rule {
     apply_server_side_encryption_by_default {
-      sse_algorithm = "AES256"
+      sse_algorithm = "aws:kms"
+      kms_master_key_id = aws_kms_key.s3_key.arn
     }
   }
 }
@@ -38,25 +39,14 @@ resource "aws_s3_bucket_versioning" "vault_versioning" {
   }
 }
 
-# FIX #4: Enable logging (bonus - tracks who accesses the bucket)
-resource "aws_s3_bucket_logging" "vault_logging" {
-  bucket = aws_s3_bucket.vulnerable_vault.id
-
-  target_bucket = aws_s3_bucket.log_bucket.id
-  target_prefix = "access-logs/"
+# Create KMS key for encryption
+resource "aws_kms_key" "s3_key" {
+  description             = "KMS key for S3 bucket encryption"
+  deletion_window_in_days = 10
+  enable_key_rotation     = true
 }
 
-# Create a separate bucket for logs
-resource "aws_s3_bucket" "log_bucket" {
-  bucket = "tkh-logs-${random_id.id.hex}"
-}
-
-# Block public access to the log bucket too
-resource "aws_s3_bucket_public_access_block" "log_bucket_privacy" {
-  bucket = aws_s3_bucket.log_bucket.id
-
-  block_public_acls       = true
-  block_public_policy     = true
-  ignore_public_acls      = true
-  restrict_public_buckets = true
+resource "aws_kms_alias" "s3_key_alias" {
+  name          = "alias/s3-bucket-key"
+  target_key_id = aws_kms_key.s3_key.key_id
 }
