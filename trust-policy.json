@@ -9,7 +9,7 @@
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
         "StringLike": {
-          "token.actions.githubusercontent.com:sub": "repo:Wendtin/S21-Delivery-Lab:ref:refs/heads/main"
+          "token.actions.githubusercontent.com:sub": "repo:Wendtin/S21-Delivery-Lab:*"
         }
       }
     }
