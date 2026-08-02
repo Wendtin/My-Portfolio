@@ -8,11 +8,7 @@
       },
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
-        "StringEquals": {
-          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
-        },
         "StringLike": {
-          "token.actions.githubusercontent.com:job_workflow_ref": "Wendtin/S21-Delivery-Lab*",
           "token.actions.githubusercontent.com:sub": "repo:Wendtin/S21-Delivery-Lab:ref:refs/heads/main"
         }
       }

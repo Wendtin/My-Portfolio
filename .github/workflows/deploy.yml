@@ -1,4 +1,5 @@
 name: Keyless Terraform Deploy
+
 on:
   push:
     branches:
@@ -13,16 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Configure AWS Credentials via OIDC
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::708380009537:role/GitHub-OIDC-Terraform-Role
+          role-to-assume: arn:aws:iam::708380009537:role/GitHubActionsOIDCRole
           aws-region: us-east-1
 
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v2
+        uses: hashicorp/setup-terraform@v3
 
       - name: Terraform Init
         run: terraform init
