@@ -4,6 +4,6 @@ provider "aws" {
     
 # SABOTAGE: The radar is installed, but the power switch is flipped off.    
 resource "aws_guardduty_detector" "primary_radar" {    
-  enable                       = false    
+  enable                       = true    
   finding_publishing_frequency = "FIFTEEN_MINUTES"    
 }    
