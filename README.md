@@ -110,7 +110,7 @@ I spent hours trying to figure out why GitHub Actions couldn't authenticate to A
 ```bash
 # Deleted and recreated OIDC provider with full https:// URL
 aws iam delete-open-id-connect-provider \
-  --open-id-connect-provider-arn arn:aws:iam::708380009537:oidc-provider/token.actions.githubusercontent.com
+  --open-id-connect-provider-arn arn:aws:iam::MY_AWS_ID_NUMBER:oidc-provider/token.actions.githubusercontent.com
 
 aws iam create-open-id-connect-provider \
   --url https://token.actions.githubusercontent.com \
@@ -183,7 +183,7 @@ I spent hours trying to figure out why GitHub Actions couldn't authenticate to A
 ```bash
 # Deleted and recreated OIDC provider with full https:// URL
 aws iam delete-open-id-connect-provider \
-  --open-id-connect-provider-arn arn:aws:iam::708380009537:oidc-provider/token.actions.githubusercontent.com
+  --open-id-connect-provider-arn arn:aws:iam::MY_AWS_ID_NUMBER:oidc-provider/token.actions.githubusercontent.com
 
 aws iam create-open-id-connect-provider \
   --url https://token.actions.githubusercontent.com \
@@ -252,7 +252,7 @@ ingress {
   to_port     = 22
   protocol    = "tcp"
   description = "SSH access from home IP only"  # ✓ Added!
-  cidr_blocks = ["108.14.201.176/32"]
+  cidr_blocks = ["108.xx.201.xx/32"]
 }
 ```
 
@@ -275,7 +275,7 @@ ingress {
 
 **`main.tf` — Infrastructure as Code**
 - Defines AWS security group with SSH ingress rule
-- Restricted to home IP only (108.14.201.176/32)
+- Restricted to home IP only (108.xx.201.xx/32)
 - Includes description for compliance
 
 **`.github/workflows/forge-pipeline.yml` — CI/CD Pipeline**
@@ -296,7 +296,7 @@ This lab demonstrates **keyless authentication** — GitHub Actions authenticate
 ```json
    {
      "iss": "https://token.actions.githubusercontent.com",
-     "sub": "repo:Wendtin@72520900/TLAB7-Forge@1320470024:ref:refs/heads/main",
+     "sub": "repo:Wendtin@GitHub_REPO_Owner ID/TLAB7-Forge@GITHUB_Repository_ID:ref:refs/heads/main",
      "aud": "sts.amazonaws.com"
    }
 ```
@@ -306,7 +306,7 @@ This lab demonstrates **keyless authentication** — GitHub Actions authenticate
    {
      "Effect": "Allow",
      "Principal": {
-       "Federated": "arn:aws:iam::708380009537:oidc-provider/token.actions.githubusercontent.com"
+       "Federated": "arn:aws:iam::MY_AWS_ID_NUMBER:oidc-provider/token.actions.githubusercontent.com"
      },
      "Action": "sts:AssumeRoleWithWebIdentity",
      "Condition": {
