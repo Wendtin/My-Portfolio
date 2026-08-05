@@ -63,19 +63,6 @@ This lab addresses **all of these risks** by implementing DevSecOps best practic
 - **Netflix** — Uses automated security gates in deployment pipelines
 - **GitHub itself** — Uses tfsec + GitHub Actions for infrastructure
 
-### Career Impact
-
-**This skill is worth money:**
-- **Cloud Security Engineer:** $xx0K - $180K/year
-- **DevSecOps Engineer:** $150K - $200K/year
-- **Platform Engineer:** $160K - $220K/year
-
-**Why employers care:**
-- Reduces security incident costs (average: $4.24M per breach)
-- Improves deployment velocity (from hours to minutes)
-- Enables compliance certifications (SOC 2, ISO 27001)
-- Prevents reputational damage from data breaches
-
 ### The Competitive Advantage
 
 This lab demonstrates you understand:
