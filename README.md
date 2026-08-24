@@ -24,12 +24,12 @@ This project automates the end-to-end deployment of a secure, enterprise-grade c
    ```bash
    terraform init
 
-**Execute SAST Security Audit:**
-```bash
+ Execute SAST Security Audit:**
+
     tfsec .
-**Provision Infrastructure:**
-```bash
+ Provision Infrastructure:
+
     terraform apply -auto-approve
-**Verify Application:**
-http://34.200.228.215/
+ Verify Application:**
+  http://34.200.228.215/
 
