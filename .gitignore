@@ -1,5 +1,18 @@
+# Terraform state files (NEVER commit these)
 *.tfstate
+*.tfstate.*
 *.tfstate.backup
+
+# Terraform cache and lock files
 .terraform/
 .terraform.lock.hcl
+
+# OS files
 .DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
