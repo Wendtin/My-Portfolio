@@ -59,7 +59,7 @@ Hands-on incident response simulation lab with forensic playbooks, attack scenar
 
 ## 🤝 Let's Connect
 - 📧 **Email:** sw.basile14@gmail.com
-- 🔗 **LinkedIn:** [linkedin.com/in/wendtin]([https://linkedin.com/in/wendtin](https://www.linkedin.com/in/wend-tin-basile-sam/))
+- 🔗 **LinkedIn:** (https://www.linkedin.com/in/wend-tin-basile-sam/)
 - 📂 **Portfolio:** [github.com/Wendtin/My-Portfolio](https://github.com/Wendtin/My-Portfolio)
 
 ---
