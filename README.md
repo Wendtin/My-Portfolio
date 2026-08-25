@@ -3,7 +3,7 @@
 🔐 **Cloud Security Architect** | 🛡️ **Incident Response Engineer** | ☁️ **AWS Security Specialist**
 
 ## About Me
-Cybersecurity professional with 5+ years of hands-on experience in:
+Cybersecurity professional with hands-on experience in:
 - **Cloud Security:** AWS infrastructure hardening, zero-trust IAM design, CloudTrail logging architecture
 - **Detection Engineering:** SIEM design, rule development (25+ rules with 92% precision)
 - **Incident Response:** Digital forensics, attack timeline reconstruction, IOC extraction
@@ -45,13 +45,14 @@ Hands-on incident response simulation lab with forensic playbooks, attack scenar
 
 ## 📚 Education
 
-🎓 **B.S. Computer Science & Information Security** — John Jay College, CUNY (GPA 3.73, Dean's List)  
+🎓 **B.S. Computer Science & Information Security** — John Jay College, CUNY  
 🎓 **A.S. Computer Science** — BMCC, CUNY  
 🏫 **TKH Innovation Fellowship 2026** — Cloud Security & AWS Track
 
 ## 🏆 Certifications
 - CompTIA Security+ (In Progress)
-- Google IT Support Professional
+- Google System Administration and IT Infrastructure
+Services
 - IBM Introduction to Cybersecurity Tools & Cyberattacks
 
 ## 📈 GitHub Stats
