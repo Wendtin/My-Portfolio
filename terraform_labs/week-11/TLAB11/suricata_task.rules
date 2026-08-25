@@ -1,2 +1,0 @@
-# TASK 2: Alert on HTTP traffic containing the string "cmd=whoami"
-alert tcp any any -> any 80 (msg:"Web Shell Detected - cmd whoami"; content:"cmd=whoami"; sid:1000001; rev:1;)
