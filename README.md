@@ -1,137 +1,68 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=200&section=header&text=Wend%20Tin%20Basile%20Sam&fontSize=40&fontColor=58a6ff&fontAlignY=38&desc=Cybersecurity%20Analyst%20%7C%20Penetration%20Tester%20%7C%20DFIR%20Specialist&descSize=16&descColor=8b949e&descAlignY=58" />
-</div>
+# Hi there, I'm Wend Tin Basile Sam (WT) 👋
 
-<div align="center">
+🔐 **Cloud Security Architect** | 🛡️ **Incident Response Engineer** | ☁️ **AWS Security Specialist**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wendtin)
-[![Portfolio](https://img.shields.io/badge/Lab%20Portfolio-View%20My%20Work-238636?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Wendtin/My-Portfolio)
-[![John Jay CUNY](https://img.shields.io/badge/GPA%203.73-Dean's%20List-003087?style=for-the-badge&logo=academia&logoColor=white)](#)
+## About Me
+Cybersecurity professional with 5+ years of hands-on experience in:
+- **Cloud Security:** AWS infrastructure hardening, zero-trust IAM design, CloudTrail logging architecture
+- **Detection Engineering:** SIEM design, rule development (25+ rules with 92% precision)
+- **Incident Response:** Digital forensics, attack timeline reconstruction, IOC extraction
+- **Security Architecture:** Network isolation, encryption strategies, compliance frameworks (NIST CSF, CIS AWS)
 
-</div>
+Currently: **TKH Innovation Fellowship 2026** (Cloud Security & AWS Track)
 
----
+## 📊 Featured Projects
 
-## 👋 About Me
+### 🔍 ELK SIEM & Digital Forensics Lab
+End-to-end security event processing pipeline ingesting 50,000+ events/day with 25+ detection rules targeting MITRE ATT&CK techniques (92% precision).
+- **Technologies:** Elasticsearch, Logstash, Kibana, Python, MITRE ATT&CK
+- **Key Results:** 8-15 min MTTD, 30-60 min MTTR, 15+ incident investigations
+- **Repository:** [github.com/Wendtin/elk-siem-dfir](https://github.com/Wendtin/elk-siem-dfir)
 
-I'm a **New York City-based cybersecurity professional** completing the **TKH Innovation Fellowship 2026** and pursuing a **B.S. in Computer Science & Information Security** at John Jay College, CUNY (GPA 3.73 · Dean's List).
+### ☁️ AWS Cloud Security Architecture
+Secure multi-layered AWS infrastructure with least-privilege IAM, private VPC isolation, immutable CloudTrail logging, and 12+ automated detection queries.
+- **Technologies:** Terraform, AWS (IAM, VPC, CloudTrail, GuardDuty, Security Hub), boto3
+- **Key Results:** 70% attack surface reduction, 15-min detection SLA, CIS AWS v1.3 95% compliance
+- **Repository:** [github.com/Wendtin/aws-cloud-security-lab](https://github.com/Wendtin/aws-cloud-security-lab)
 
-My hands-on experience spans the full security spectrum — from offensive penetration testing and web application exploitation to SIEM engineering, digital forensics, and network defense. Every lab I complete is documented, reported, and published to my portfolio.
+### 🚨 Incident Response War Room Lab
+Hands-on incident response simulation lab with forensic playbooks, attack scenario engineering, and IOC extraction training.
+- **Technologies:** Wireshark, Windows Event Logs, Linux auditd, NIST CSF, incident response templates
+- **Key Results:** MTTD < 15 min, MTTR < 1 hour, 95%+ IOC accuracy
+- **Repository:** [github.com/Wendtin/incident-response-lab](https://github.com/Wendtin/incident-response-lab)
 
-```
-🎯 Target Roles  →  SOC Analyst  ·  Junior Penetration Tester  ·  Security Analyst  ·  IT Security Specialist
-📍 Location      →  New York City, NY
-🎓 Education     →  B.S. Computer Science & Information Security — John Jay College, CUNY
-🏆 GPA           →  3.73  |  Dean's List
-```
+## 💻 Technical Skills
 
----
+**Cloud & Infrastructure:** AWS (IAM, EC2, VPC, CloudTrail, S3, KMS, GuardDuty), Terraform, Infrastructure-as-Code
 
-## 🛠️ Technical Skills
+**Security Operations:** SIEM (ELK Stack, Splunk), Log Analysis, Alert Tuning, Threat Detection, Incident Response, Digital Forensics
 
-<table>
-<tr>
-<td valign="top" width="50%">
+**Detection Engineering:** MITRE ATT&CK framework, Suricata, Sysmon for Linux, detection rule development
 
-### 🔴 Offensive Security
-- **Exploitation:** Metasploit Framework, CVE-based exploits
-- **Web App Attacks:** SQLi, XSS, CSRF, BOLA/IDOR, SSRF
-- **Post-Exploitation:** Lateral movement, privilege escalation, persistence
-- **Pivoting:** SOCKS proxy, port forwarding, Docker network traversal
-- **Recon:** Nmap, Shodan, Sublist3r, Nikto, OSINT
+**Frameworks & Standards:** NIST CSF, ISO 27001, CIS Benchmarks, AWS Well-Architected Security Pillar
 
-</td>
-<td valign="top" width="50%">
+**Tools & Languages:** Python, bash, Wireshark, Metasploit, Burp Suite, Git, Docker
 
-### 🔵 Defensive Security & SIEM
-- **SIEM:** ELK Stack (Elasticsearch · Logstash · Kibana)
-- **Threat Hunting:** KQL query writing, IOC correlation
-- **IDS:** Suricata — custom rule authoring & tuning
-- **Firewall:** UFW, iptables rule hardening
-- **Host Monitoring:** Sysmon, log parsing, alert triage
+## 📚 Education
 
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
+🎓 **B.S. Computer Science & Information Security** — John Jay College, CUNY (GPA 3.73, Dean's List)  
+🎓 **A.S. Computer Science** — BMCC, CUNY  
+🏫 **TKH Innovation Fellowship 2026** — Cloud Security & AWS Track
 
-### ⚫ Digital Forensics & IR (DFIR)
-- **Memory Forensics:** Volatility Framework
-- **Disk Forensics:** Autopsy, Sleuth Kit, FTK Imager
-- **Network Forensics:** Wireshark, tcpdump
-- **Incident Response:** Attack reconstruction, evidence acquisition, chain of custody documentation
+## 🏆 Certifications
+- CompTIA Security+ (In Progress)
+- Google IT Support Professional
+- IBM Introduction to Cybersecurity Tools & Cyberattacks
 
-</td>
-<td valign="top" width="50%">
+## 📈 GitHub Stats
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Wendtin&show_icons=true&theme=dark)
 
-### 🟣 Infrastructure & Development
-- **OS:** Kali Linux, Ubuntu, Windows Server 2022
-- **Containerization:** Docker, multi-network lab environments
-- **Scripting:** Bash, Python
-- **Active Directory:** GPO configuration, domain join, user management
-- **Cloud:** AWS (EC2, S3, SSM Session Manager)
-- **Tools:** Git, Burp Suite, SQLmap, Hydra
-
-</td>
-</tr>
-</table>
+## 🤝 Let's Connect
+- 📧 **Email:** sw.basile14@gmail.com
+- 🔗 **LinkedIn:** [linkedin.com/in/wendtin](https://linkedin.com/in/wendtin)
+- 📂 **Portfolio:** [github.com/Wendtin/My-Portfolio](https://github.com/Wendtin/My-Portfolio)
 
 ---
 
-## 🔬 Lab Portfolio Highlights
-
-> 📁 Full reports, methodology, and artifacts → **[My-Portfolio Repository](https://github.com/Wendtin/My-Portfolio)**
-
-| # | Lab | Domain | Key Tools | Outcome |
-|---|-----|--------|-----------|---------|
-| 01 | **TEPP — The Final Reckoning** *(Capstone)* | Full Pentest + IR | Metasploit · Kali · Docker | 4-phase pentest across Docker networks with full IR response |
-| 02 | **Operation Phantom Pursuit** | SIEM / DFIR | ELK Stack · Sleuth Kit | Correlated SIEM logs with disk forensics to close incident |
-| 03 | **The Central Nervous System** | SIEM & Threat Hunting | Elasticsearch · Kibana · KQL | Deployed ELK SIEM; hunted threats with custom KQL queries |
-| 04 | **The Digital Autopsy** | Memory & Disk Forensics | Volatility · Autopsy | Extracted malware artifacts from forensic image |
-| 05 | **The Tripwire** | IDS Engineering | Suricata | Authored custom signatures for shells, scans, SQLi patterns |
-| 06 | **Operation Fortress** | Defense-in-Depth | UFW · iptables · Sysmon | Layered host hardening: firewall + IDS + host monitoring |
-| 07 | **The Invisible Logic** | API Security | Burp Suite · curl · Flask | Exploited BOLA/IDOR in REST API; accessed unauthorized data |
-| 08 | **The Poisoned Browser** | Web App Attacks | Burp Suite | Delivered stored XSS and CSRF payloads; documented impact |
-| 09 | **The Verification Protocol** | CVE Exploitation | Metasploit · CVE-2007-2447 | RCE via Samba username map script vulnerability |
-| 10 | **The Deep Network** | Persistence & Pivoting | Metasploit SOCKS | Pivoted through internal segments to isolated Redis service |
-| 11 | **Operation Deep Pivot** | Post-Exploitation | Metasploit · Docker | Full chain: access → priv esc → persist → pivot |
-| 12 | **Climbing the Ladder** | Linux Privilege Escalation | GTFOBins · LinPEAS | Exploited SUID, sudo misconfig, cron wildcard injection |
-| 13 | **Operation Omni-Portal** | Web App Pentesting | Burp Suite · SQLmap | Combined SQLi + XSS + BOLA; CVSS-rated pentest report |
-| 14 | **The Barricade** | Firewall Hardening | UFW · iptables | Wrote stateful firewall rules; documented hardening rationale |
-| 15 | **The Crime Scene** | DFIR Investigation | Autopsy · Sleuth Kit | Recovered deleted artifacts; preserved chain of custody |
-
----
-
-## 🎓 Education & Training
-
-| Credential | Institution | Status |
-|---|---|---|
-| 🏫 TKH Innovation Fellowship — Cybersecurity | The Knowledge House, NYC | ✅ 2026 |
-| 🎓 B.S. Computer Science & Information Security (GPA 3.73) | John Jay College, CUNY | ✅ Completed |
-| 🎓 A.S. Computer Science | BMCC, CUNY | ✅ Completed |
-| 💼 Cybersecurity Tech Fellow (Paid) | CodePath | ✅ Completed |
-| ☁️ AWS SimuLearn Labs | AWS Skill Builder | 🔄 In Progress |
-
----
-
-## 📂 Featured Projects
-
-**🔐 TKH Cybersecurity Lab Portfolio**
-> 15+ documented hands-on labs covering the full security lifecycle — offensive, defensive, SIEM, and DFIR. Each lab includes a written report, methodology, and evidence artifacts.
-> → [github.com/Wendtin/My-Portfolio](https://github.com/Wendtin/My-Portfolio)
-
-**🌐 COLIB — Community Library Web App**
-> Deployed community library application built and hosted live.
-> → [amber-tidy-ferret-151.vscodeedu.app](https://amber-tidy-ferret-151.vscodeedu.app)
-
----
-
-<div align="center">
-
-**Open to full-time, part-time, and internship opportunities in cybersecurity and IT security.**
-
-📍 New York City &nbsp;·&nbsp; 📧 Available on request &nbsp;·&nbsp; 🔗 [LinkedIn](https://linkedin.com/in/wendtin)
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,100:1a1a2e&height=100&section=footer" />
-
-</div>
+*"Security is not a product, but a process." — Bruce Schneier*  
+Always learning, always building, always securing. 🛡️
