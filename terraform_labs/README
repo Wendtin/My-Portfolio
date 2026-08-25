@@ -1,0 +1,102 @@
+# T1-M1-S06: Portfolio Artifact Git Commit
+### Mission: Operation Hidden Door
+
+---
+
+## 🎯 Objective
+
+Investigate and neutralize a **Deception Layer** planted by an adversary. This involves:
+- Fixing a poisoned DNS/hosts file (The Lying Phonebook)
+- Discovering a hidden local web service (The Hidden Door)
+- Generating and submitting an audit artifact
+
+---
+
+## 🛠️ Prerequisites
+
+- Linux terminal (Ubuntu/Debian recommended)
+- Tools: `curl`, `dig`, `ss`, `nano`, `git`
+- `sudo` privileges
+
+---
+
+## 🚀 Setup
+
+Run the lab initializer script:
+
+```bash
+curl -sL https://gist.githubusercontent.com/grobbins-cell/5da1f6c7f4dd5c3bbecc4bac04ac3866/raw/2a2b165b865961415535626d87562f262839adca/protocol_audit.txt | bash
+```
+
+This script sets up the deception layer (tampered `/etc/hosts` + hidden service).
+
+---
+
+## 📋 Phase 1: The Lying Phonebook
+
+| Step | Command | Purpose |
+|------|---------|---------|
+| 1 | `curl -I google.com` | Observe fake `nginx` Server header |
+| 2 | `cat /etc/hosts` | Find the rogue redirect entry |
+| 3 | `sudo nano /etc/hosts` | Remove `127.0.0.1 google.com` line |
+| 4 | `dig google.com` | Verify real public IP is now returned |
+
+**Key Finding:** A `127.0.0.1 google.com` entry in `/etc/hosts` was intercepting traffic meant for Google and serving it locally via nginx.
+
+---
+
+## 📋 Phase 2: The Hidden Door
+
+| Step | Command | Purpose |
+|------|---------|---------|
+| 1 | `curl localhost` | Confirm "Connection Refused" on port 80 |
+| 2 | `ss -tuln` | List all listening TCP/UDP ports |
+| 3 | `curl -I localhost:8080` | Extract Server header of hidden service |
+
+**Key Finding:** A service was listening on a non-standard port (e.g., `8080`), invisible unless actively scanned.
+
+---
+
+## 📋 Phase 3: The Filing
+
+```bash
+# Submit the audit artifact
+session-submit --session 06 --artifact protocol_audit.txt
+
+# Commit to GitHub portfolio
+git add protocol_audit.txt
+git commit -m "T1-M1-S06: Add protocol audit artifact - DNS deception and hidden service"
+git push origin main
+```
+
+---
+
+## 📁 Artifact: protocol_audit.txt
+
+The submitted artifact includes:
+- **Google's real public IP** (obtained via `dig google.com` after fix)
+- **Server header** of the hidden local service (obtained via `curl -I localhost:<port>`)
+
+---
+
+## 💡 Concepts Practiced
+
+- **DNS Poisoning** — How `/etc/hosts` can override real DNS resolution
+- **Port Scanning** — Using `ss -tuln` to enumerate listening services
+- **Service Fingerprinting** — Extracting version info from HTTP headers
+- **Git Workflow** — Staging, committing, and pushing artifacts to a portfolio repo
+
+---
+
+## ⚠️ Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| `dig` not found | Run `sudo apt install dnsutils` |
+| `ss` not found | Run `sudo apt install iproute2` |
+| Port not 8080 | Check `ss -tuln` output carefully for any LISTEN port besides 22 |
+| Push fails | Ensure your remote is set: `git remote -v` |
+
+---
+
+*Lab completed as part of the T1-M1 curriculum portfolio.*

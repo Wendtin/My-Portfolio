@@ -1,0 +1,9 @@
+<Sysmon schemaversion="4.81">
+  <EventFiltering>
+    <RuleGroup name="Malware Detection" groupRelation="or">
+      <ProcessCreate onmatch="include">
+        <CommandLine condition="contains">curl http://198.51.100.5</CommandLine>
+      </ProcessCreate>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

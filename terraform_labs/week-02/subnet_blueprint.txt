@@ -1,0 +1,30 @@
+Address:   10.50.50.150         00001010.00110010.00110010. 10010110
+Netmask:   255.255.255.0 = 24   11111111.11111111.11111111. 00000000
+Wildcard:  0.0.0.255            00000000.00000000.00000000. 11111111
+=>
+Network:   10.50.50.0/24        00001010.00110010.00110010. 00000000
+HostMin:   10.50.50.1           00001010.00110010.00110010. 00000001
+HostMax:   10.50.50.254         00001010.00110010.00110010. 11111110
+Broadcast: 10.50.50.255         00001010.00110010.00110010. 11111111
+Hosts/Net: 254                   Class A, Private Internet
+
+---/27 SUBNET ANALYSIS---
+Address:   10.50.50.150         00001010.00110010.00110010.100 10110
+Netmask:   255.255.255.224 = 27 11111111.11111111.11111111.111 00000
+Wildcard:  0.0.0.31             00000000.00000000.00000000.000 11111
+=>
+Network:   10.50.50.128/27      00001010.00110010.00110010.100 00000
+HostMin:   10.50.50.129         00001010.00110010.00110010.100 00001
+HostMax:   10.50.50.158         00001010.00110010.00110010.100 11110
+Broadcast: 10.50.50.159         00001010.00110010.00110010.100 11111
+Hosts/Net: 30                    Class A, Private Internet
+
+PING 10.50.50.1 (10.50.50.1) 56(84) bytes of data.
+From 10.50.50.150 icmp_seq=1 Destination Host Unreachable
+From 10.50.50.150 icmp_seq=2 Destination Host Unreachable
+From 10.50.50.150 icmp_seq=3 Destination Host Unreachable
+From 10.50.50.150 icmp_seq=4 Destination Host Unreachable
+
+--- 10.50.50.1 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3063ms
+pipe 3

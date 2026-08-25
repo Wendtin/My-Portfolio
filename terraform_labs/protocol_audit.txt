@@ -1,0 +1,7 @@
+
+
+Audit Report: Operation Hidden Door
+-----------------------------------
+Real IP for google.com: 142.251.45.206
+Hidden Service Port: 8080
+Hidden Service Server Header: nginx
